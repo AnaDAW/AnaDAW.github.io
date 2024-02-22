@@ -1,6 +1,6 @@
 # Ana Carbonell Prieto - Currículum Vitae
 
-Para la creación de mi currículum he utilizado los lenguajes de `HTML5` y `CSS3`, conjunto al software de `Visual Studio Code`.
+Para la creación de [mi currículum](https://anadaw.github.io/) he utilizado los lenguajes de `HTML5` y `CSS3`, conjunto al software de `Visual Studio Code`.
 
 
 ## Variables
