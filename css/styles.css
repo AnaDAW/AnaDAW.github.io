@@ -1,5 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --background-color: white;
+    --primary-color: #50316d;
+    --secondary-color: #ffd139;
+    --light-color: #ffe797;
+    --bar-color: rgba(255, 255, 255, .96);
+    --text-color: black;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Comfortaa';
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik';
+}
+
+#inicio, section {
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    padding-top: 100px;
+}
+
+#inicio > nav {
+    width: 100%;
+    background-color: var(--bar-color);
+    position: fixed;
+    padding: 25px 50px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 1;
+}
+
+#inicio > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#inicio > nav li {
+    list-style: none;
+    padding: 10px;
+}
+
+#inicio > nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+}
+
+#inicio > nav a:hover {
+    color: var(--primary-color);
+}
+
+#inicio > nav a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 300ms;
+}
+
+#inicio > nav a:hover::after {
+    width: 75%;
+}
+
+#presentacion {
+    padding: 35vh 15%;
+    font-size: 1.5em;
+    position: relative;
+}
+
+#presentacion img {
+    position: absolute;
+    left: 60vw;
+    top: 25vh;
+    height: 500px;
+}
+
+#presentacion > h1 > span {
+    font-family: 'Rubik';
+    color: var(--primary-color);
+}
+
+#presentacion > h2 > span {
+    font-size: 50px;
+}
+
+#presentacion > span {
+    position: absolute;
+    font-size: 50px;
+    left: 48%;
+    bottom: 3%;
+}
+
+h1.destacado {
+    font-size: 4.8em;
+    margin-top: -15px;
+    color: var(--text-color);
+    position: relative;
+}
+
+h1.destacado::after {
+    content: '';
+    width: 590px;
+    height: 90px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    z-index: -1;
+    transition: 500ms;
+    transform: rotate(-2deg);
+}
+
+h1.destacado:hover::after {
+    width: 0px;
+    left: 640px;
+    bottom: 10px;
+}
+
+#presentacion p {
+    font-size: .6em;
+    width: 640px;
+    margin-top: 15px;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-box h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.content-box h2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+}
+
+#sobre-mi {
+    padding: 40vh 5%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    gap: 100px;
+}
+
+#sobre-mi h2 {
+    color: var(--secondary-color);
+}
+
+#sobre-mi h2::after {
+    background-color: var(--secondary-color);
+}
+
+#sobre-mi div {
+    margin-bottom: 20px;
+}
+
+#sobre-mi div > h3 {
+    font-weight: normal;
+}
+
+#sobre-mi div > p {
+    font-size: .9em;
+    margin-top: 5px;
+    color: var(--light-color);
+}
+
+#softwares > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#softwares > div > div {
+    position: relative;
+}
+
+#lenguajes > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#lenguajes > div > div {
+    position: relative;
+}
+
+#conocimiento {
+    gap: 30px
+}
+
+#conocimiento > div.content-box {
+    padding: 7vh 5%;
+    gap: 175px;
+}
+
+#conocimiento h2 {
+    color: var(--primary-color);
+}
+
+#conocimiento h2::after {
+    background-color: var(--primary-color);
+}
+
+div > svg {
+    width: 75px;
+    transition: 200ms;
+}
+
+div > svg:hover {
+    position: absolute;
+    transform: translate(3px, -5px);
+}
+
+#idiomas {
+    width: 850px;
+}
+
+#idiomas > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+}
+
+#idiomas > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#idiomas span {
+    font-size: 70px;
+    transition: 200ms;
+}
+
+#idiomas span:hover {
+    transform: scale(1.1);
+}
+
+#idiomas h3 {
+    margin-top: 7px;
+}
+
+#contacto {
+    width: 100%;
+    height: 150px;
+    padding: 40px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+#contacto > h2 {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#contacto > h2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-color: var(--secondary-color);
+}
+
+#contacto > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#contacto > div a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+#contacto > div a:hover {
+    font-weight: bold;
+    color: var(--light-color);
 }
