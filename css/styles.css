@@ -103,7 +103,7 @@ section {
     position: absolute;
     font-size: 50px;
     left: 48%;
-    bottom: 3%;
+    bottom: 5vh;
 }
 
 h1.destacado {
@@ -304,4 +304,24 @@ div > svg:hover {
 #contacto > div a:hover {
     font-weight: bold;
     color: var(--light-color);
+}
+
+@media screen and (max-width: 1270px) {
+    #presentacion img {
+        position: inherit;
+        left: 0px;
+        top: 0px;
+        height: 400px;
+        margin-left: 25%;
+        margin-bottom: -50px;
+    }
+
+    #presentacion {
+        padding: 100px 20% 90px;
+    }
+
+    #presentacion > span {
+        font-size: 35px;
+        bottom: -4vh;
+    }
 }
