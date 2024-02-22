@@ -325,3 +325,69 @@ div > svg:hover {
         bottom: -4vh;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #inicio, section {
+        height: 100%;
+    }
+
+    #presentacion {
+        font-size: 1em;
+    }
+
+    #presentacion img {
+        height: 300px;
+    }
+
+    #presentacion > h2 > span {
+        font-size: 30px;
+    }
+    
+    #presentacion > span {
+        bottom: 10px;
+    }
+
+
+    h1.destacado::after {
+        width: 380px;
+        height: 60px;
+        left: 35px;
+    }
+    
+    h1.destacado:hover::after {
+        left: 415px;
+        bottom: 8px;
+    }
+
+    #presentacion p {
+        font-size: .9em;
+        width: 430px;
+        margin-top: 15px;
+    }
+
+    .content-box {
+        justify-content: start;
+    }
+
+    #sobre-mi {
+        padding: 15%;
+    }
+
+    #conocimiento {
+        padding: 15%;
+    }
+
+    #conocimiento > div.content-box {
+        gap: 100px;
+        justify-content: center;
+    }
+
+    #idiomas span {
+        font-size: 50px;
+        transition: 200ms;
+    }
+
+    #idiomas > div {
+        gap: 50px;
+    }
+}
